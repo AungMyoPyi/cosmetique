@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Brygada+1918:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg::before {
+    padding: 0;
+    margin: 0;
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, hsla(310, 64%, 57%, 1) 0%, hsla(294, 95%, 83%, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: rotate();
+    z-index: 0;
+}
+
+form {
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 450px;
+    box-sizing: border-box;
+    background-color: #ffddf4;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 400px;
+    padding-right: 40px;
+}
+
+.form-wrapper {
+    position: absolute;
+    display: flex;
+    width: 740px;
+    height: 490px;
+    box-sizing: border-box;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.5);
+    background-color: #ffddf4;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    box-sizing: border-box;
+    margin: 40px;
+    width: 400px;
+    height: 450px;
+    background: url(/images/login_image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.image-box {
+    display: flex;
+    position: absolute;
+    width: 400px;
+    height: 450px;
+    left: 2%;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffddf4;
+}
+
+h1 {
+    padding-bottom: 5px;
+    text-align: center;
+    font-family: 'Salsa', cursive;
+    font-size: 36px;
+}
+
+.input-container {
+    box-sizing: border-box;
+    width: 100%;
+    height: 20%;
+}
+
+.input-field {
+    position: relative;
+}
+
+.input-field label {
+    position: absolute;
+    font-size: 18px;
+    top: 32%;
+    left: 9px;
+    transform: translateY(-50%);
+    color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    font-family: 'Lato', sans-serif;
+}
+
+.input-field input:focus {
+    outline-color: rgb(50, 150, 237);
+}
+
+.input-field input {
+    position: relative;
+    background: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border: none;
+    padding: 0 10px;
+    font-family: 'Lato', sans-serif;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.input-field input:focus~label,
+.input-field input:valid~label {
+    top: 0;
+    background-color: #ffddf4;
+    padding: 0 7px;
+    color: black;
+    font-size: 16px;
+    transition: 0.2s ease-in-out;
+    margin-left: 1px;
+}
+
+#subMit {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(50, 150, 237);
+    border: none;
+    color: #f4f4f4;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    letter-spacing: .5px;
+    transition: 0.3s;
+}
+
+#subMit:hover {
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+    color: white;
+    outline: 1px solid white;
+}
+
+.line {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.line::before {
+    content: 'Or';
+    position: absolute;
+    background-color: #ffddf4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+#forgot_pw {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#sign_up {
+    margin: 15px 0;
+}
+
+#forgot_pw, #sign_up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+#sign_up {
+    padding-bottom: 5px;
+}
+
+#sign_up a {
+    margin-left: 5px;
+}
+
+.continue {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+.social-icons {
+    position: relative;
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#x, #instagram {
+    border-radius: 5px;
+}
+
+#facebook,#google {
+    border-radius: 50%;
+    box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.5);
+}
+
+#instagram, #x {
+    border-radius: 5px;
+    box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.5);
+}
+
+#facebook:hover,#google:hover {
+    background-color: white;
+}
+
+#instagram:hover, #x:hover {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(32, 54, 247);
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+}
+
+#sign_up a {
+    text-decoration: underline;
+}

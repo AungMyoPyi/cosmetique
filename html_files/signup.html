@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css_files/signup.css">
+    <link rel="icon" type="image/favicon" href="/images/Favicon.png">
+</head>
+<body>
+    <div class="acc-created" id="acc-created-box">
+        <div class="content-box">
+            <div class="upper">
+                <div class="upper-content">
+                    <i class="fa-solid fa-circle-check" id="mark"></i><br><br>
+                    <span id="congrats">Congratulations&#x21;</span>
+                </div>
+            </div>
+
+            <div class="lower">
+                <div class="lower-content">
+                    <p>
+                        Your account has been<br>
+                        successfully created.
+                    </p>
+                </div>
+
+                <button id="continue-btn" onclick="location.href='/Cart/cart.html'">
+                    Continue <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-wrapper" id="blurred-bg">
+        <div class="sign-up-container">
+            <div class="sign-up-form">
+                <div class="right-side">
+                    <form onsubmit="return checkPW()">
+                        <div class="sign-up-header">
+                            <h1>Sign Up</h1>
+                        </div>
+                
+                        <div class="input-field-up">
+                            <input type="text" name="firstName" id="firstName" required>
+                            <label for="firstName">First Name</label>
+                        </div>
+                
+                        <div class="input-field-up">
+                            <input type="text" name="lastName" id="lastName" required>
+                            <label for="lastName">Last Name</label>
+                        </div>
+                
+                        <div class="input-field-up">
+                            <input type="email" name="Email" id="Email" required>
+                            <label for="Email">Email</label>
+                        </div>
+                
+                        <div class="input-field-up">
+                            <input type="password" name="create-password" id="create-password" minlength="8" required>
+                            <label for="Password-create">Create Password</label>
+                        </div>
+                
+                        <div class="input-field-up">
+                            <input type="password" name="confirm-password" id="confirm-password" minlength="8" required>
+                            <label for="Password-confirm">Confirm Password</label>
+                        </div>
+
+                        <div id="alert-text-false">
+                            <i class="fa-solid fa-circle-exclamation" id="exclamation"></i>
+                            Passwords don't match
+                        </div>
+                
+                        <div class="policy-agreed">
+                            <input type="checkbox" id="policy" name="policy" value="policy_agreed" required>
+                            <label for="policy">I agree to the terms and privacy policy</label>
+                        </div>
+                
+                        <button type="submit" id="Sign-up">Sign up</button>
+                
+                        <div class="go-to-login">
+                            <span>Already have an account?</span>
+                            <a href="/html_files/login.html">Login</a>
+                        </div>
+    
+                        <div class="line1"></div>
+    
+                        <div class="continue1">
+                            <span class="text1">Continue with</span>
+                        </div>
+            
+                        <div class="social-icons1">
+                            <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+                                <img src="/images/facebook.png" id="facebook1" alt="Facebook" width="25px" height="25px" style="margin-right: 10px;">
+                            </a>
+            
+                            <a href="https://www.instagram.com/" target="_blank" title="Instagram">
+                                <img src="/images/instagram.png" id="instagram1" alt="Instagram" width="25px" height="25px" style="margin-right: 10px;">
+                            </a>
+            
+                            <a href="https://twitter.com/" target="_blank" title="Twitter X">
+                                <img src="/images/twitter.png" id="x1" alt="X" width="25px" height="25px" style="margin-right: 10px;">
+                            </a>
+            
+                            <a href="https://www.google.com/" target="_blank" title="Google">
+                                <img src="/images/google.png" id="google1" alt="Google" width="25px" height="25px">
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <div class="image-for-signup">
+                    <img src="/images/signup_image.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Js_SignUp.js"></script>
+</body>
+</html>

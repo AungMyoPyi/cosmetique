@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmétique | Home</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css_files/main_style.css">
+    <link rel="icon" type="image/favicon" href="images/Favicon.png">
+</head>
+<body>
+    <!--Home Page & Nav bar-->
+    <div class="wrapper" id="blur">
+        <header class="header">
+            <div class="nav">
+                <nav>
+                    <span class="logo">
+                        <a href="#Home" id="logo-a">
+                            <img src="images/Cosmetique_Logo.png" alt="Cosmetique Logo">
+                        </a>
+                    </span>
+
+                    <div class="cart">
+                        <a href="#popup"  onclick="toggle()"><i class="fa-solid fa-cart-shopping" id="Cart"></i></a>
+                    </div>
+
+                    <div class="main-menu">
+                        <ul>
+                            <li><a href="#Home" class="tabBtn enable"><i class="fa-solid fa-house" id="home"></i>Home</a></li>
+                            <li><a href="#Products" class="tabBtn">Brands<i class="fa-solid fa-caret-down" id="down"></i></a>
+                                <div class="subMenu1">
+                                    <ul>
+                                        <li><a href="Other_Pages/loreal/L'Oreal.html">L'Oréal Paris</a></li>
+                                        <li><a href="Other_Pages/romand&rare_beauty/RareBeauty.html">Rare Beauty</a></li>
+                                        <li><a href="Other_Pages/vaseline/vaseline.html">Vaseline</a></li>
+                                        <li><a href="Other_Pages/romand&rare_beauty/Romand.html">Romand</a></li>
+                                        <li><a href="Other_Pages/flower_knows/Flowers.html">Flower Knows</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#ContactUs" class="tabBtn">Contact Us</a></li>
+                            <li><a href="#AboutUs" class="tabBtn">About Us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+       <section class="section" id="Home">
+            <div class="content1">
+                <div class="text-box">
+                    <span class="head-text">Cosmétique</span>
+
+                    <h1 class="H-text">Find your true <span class="multi-text"></span></h1>
+
+                    <p class="H-text1">Our website highlights top 5 the most popular Cosmetic Brands and enjoy top quality products provided on each page of our website . . . . .</p>
+
+                    <button class="explore-more" onclick="location.href='/Cart/cart.html'">Explore More <i class="fa-solid fa-arrow-up-right-from-square" id="explore"></i></button>
+                </div>
+            </div>
+       </section>
+
+        <section class="section" id="Products">
+            <div class="content2">
+                <div class="slider">
+                    <div class="list">
+                        <div class="item">
+                            <img src="images/Loreal.jpg" alt="L'Oréal Paris">
+                        </div>
+    
+                        <div class="item">
+                            <img src="images/Rare_Beauty.png" alt="Rare Beauty">
+                        </div>
+    
+                        <div class="item">
+                            <img src="images/Vaseline.png" alt="Vaseline">
+                        </div>
+    
+                        <div class="item">
+                            <img src="images/Romand.png" alt="Rom@nd">
+                        </div>
+    
+                        <div class="item">
+                            <img src="images/Flower_Knows.png" alt="Flower Knows">
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Buttons Prev and Next -->
+                <div class="buttons">
+                    <button id="prev"><</button>
+                    <button id="next">></button>
+                </div>
+    
+                <!-- Dots -->
+                <ul class="dots">
+                    <li class="dotted active1"></li>
+                    <li class="dotted"></li>
+                    <li class="dotted"></li>
+                    <li class="dotted"></li>
+                    <li class="dotted"></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="ContactUs">
+            <div class="content4">
+                <div class="contact-form">
+                    <form action="" id="contact-us-form">
+                        <div class="CU-form">
+                            <div class="CU-text">
+                                <h1>Just say Hello!</h1><br>
+                                <p>Let us know more about you!</p>
+                            </div>
+
+                            <input type="text" id="cu-name" placeholder="Your Name" required>
+                            <input type="email" name="email" id="cu-email" placeholder="E-mail" required>
+                            <input type="text" id="cu-subject" placeholder="Write a Subject" required>
+                            <textarea name="cu-message" id="cu-message" cols="30" rows="5" required
+                                placeholder="Some message about yourself..."></textarea>
+          
+                            <div><div>
+                            <input type="submit" name="" value="submit" class="btn">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="contact-us-form-right">
+                    <div class="right-text">
+                        <div class="cu-right-h1">
+                            <h1>Contact <br> Information</h1><br>
+                        </div>
+
+                        <div class="cu-right-p">
+                            <p>
+                                Parami Road <br>
+                                Hlaing Township, Yangon<br>
+                                University of Information Technology <br><br>
+                                Call Us : +959 267 061 436 <br>
+                                Mail Us : cosmetique@gmail.com<br><br>
+                                Our website provides 24-hours service & <br>
+                                The shop is open from Monday - Friday <br>
+                                08:00 am - 05:00 pm
+                            </p><br><br>
+                        </div>
+
+                        <div class="cu-right-h1">
+                            <h1>Follow Us</h1>
+                        </div>
+                    </div>
+
+                    <div class="CU-social-icons">
+                        <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+                            <img src="images/facebook.png" id="facebook2" alt="Facebook" width="25px" height="25px" style="margin-right: 10px;">
+                        </a>
+    
+                        <a href="https://www.instagram.com/" target="_blank" title="Instagram">
+                            <img src="images/instagram.png" id="instagram2" alt="Instagram" width="25px" height="25px" style="margin-right: 10px;">
+                        </a>
+    
+                        <a href="https://twitter.com/" target="_blank" title="Twitter X">
+                            <img src="images/twitter.png" id="x2" alt="X" width="25px" height="25px" style="margin-right: 10px;">
+                        </a>
+    
+                        <a href="https://www.google.com/" target="_blank" title="Google">
+                            <img src="images/google.png" id="google2" alt="Google" width="25px" height="25px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="AboutUs">
+            <div class="content5">
+                <div class="aboutUs-container">
+                    <div class="as-img_box">
+                        <div class="img_box_header_text">
+                            <h1>Team Members</h1>
+                        </div>
+
+                        <div class="AMP">
+                            <img src="images/AMP.png">
+                            <div>
+                                <h3>Aung Myo Pyae <br>
+                                    <h4>TNT - 2180</h4>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="AM">
+                            <img src="images/AM.png">
+                            <div>
+                                <h3>Aung Mann <br>
+                                    <h4>TNT - 2248</h4>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="WWMT">
+                            <img src="images/WWMT.png">
+                            <div>
+                                <h3>Wint Wah Myo Thant <br>
+                                    <h4>TNT - 2181</h4>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="KSWL">
+                            <img src="images/KSWL.png">
+                            <div>
+                                <h3>Kyal Sin Win Lei <br>
+                                    <h4>TNT - 2278</h4>
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="APPW">
+                            <img src="images/APPW.png">
+                            <div>
+                                <h3>Aye Pa Pa Win <br>
+                                    <h4>TNT - 2227</h4>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+       
+                    <div class="as-text-box">
+                       <div class="as-text-from-right">
+                            <h1 id="as-text-box-header">About Us</h1>
+                       </div>
+
+                       <p class="as-text-box-p">Cosmetics are pharmaceutical products that are used for 
+                       improving skin appearance and body odor. These products are
+                       available in various forms, ranging from lotions, creams, 
+                       powders, and so forth. Cosmetics are used for cleansing,
+                       protecting, and moisturizing the skin.</p>
+                       
+                       <div class="as-text-from-right">
+                            <button>Learn More</button>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+
+    <!--Login Page-->
+    <div class="login-page" id="popup">
+        <div class="form-wrapper">
+                <div class="image-box">
+                    <div class="image"></div>
+                </div>
+    
+                <form action="">
+                <div class="form-container">
+                    <a href="#"><i class="fa-solid fa-circle-xmark" id="cross" onclick="toggle()"></i></a>
+                    <div class="login-header-text">
+                        <h1>Login</h1>
+                    </div>
+
+                    <div class="input-container">
+                        <div class="input-field">
+                            <input type="text" name="email" id="email" required>
+                            <label for="email">Email</label>
+                        </div>
+    
+                        <div class="input-field">
+                            <input type="password" name="Password" id="Password" required>
+                            <label for="Password">Password</label>
+                        </div>
+                    </div>
+                    
+                    <div class="options">
+                        <span><a href="#" id="forgot_pw" title="Forgot Password">Forgot password?</a></span>
+    
+                        <button type="submit" value="submit" id="subMit">Login</button>
+    
+                        <span id="sign_up">Don't have an account?<a href="/html_files/signup.html" title="Create an account">Sign Up</a></span>
+                    </div>
+    
+                    <div class="line"></div>
+    
+                    <div class="continue">
+                        <span class="text">Continue with</span>
+                    </div>
+    
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+                            <img src="/images/facebook.png" id="facebook" alt="Facebook" width="25px" height="25px" style="margin-right: 10px;">
+                        </a>
+    
+                        <a href="https://www.instagram.com/" target="_blank" title="Instagram">
+                            <img src="/images/instagram.png" id="instagram" alt="Instagram" width="25px" height="25px" style="margin-right: 10px;">
+                        </a>
+    
+                        <a href="https://twitter.com/" target="_blank" title="Twitter X">
+                            <img src="/images/twitter.png" id="x" alt="X" width="25px" height="25px" style="margin-right: 10px;">
+                        </a>
+    
+                        <a href="https://www.google.com/" target="_blank" title="Google">
+                            <img src="/images/google.png" id="google" alt="Google" width="25px" height="25px">
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    
+
+    <script src="js_files/Js_Home.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script type="text/javascript">
+        //Text Change 
+        let typingEffect = new Typed('.multi-text', {
+            strings : ["colors.","beauty.","happiness."],
+            loop : true,
+            typeSpeed : 100,
+            backSpeed : 80,
+            backDelay : 1500,
+        });
+
+
+
+        //Scroll Reveal
+        ScrollReveal({
+            reset : true,
+            distance : '60px',
+            duration : 2500,
+            delay : 400
+        });
+
+        ScrollReveal().reveal('.H-text', {delay: 600, origin: 'right'});
+        ScrollReveal().reveal('.head-text', {delay: 700 , origin: 'right'});
+        ScrollReveal().reveal('.H-text1', {delay: 800, origin: 'bottom'});
+        ScrollReveal().reveal('.content1', {delay: 500, origin: 'right'});
+
+
+        ScrollReveal().reveal('.CU-text', {delay: 100, origin: 'left'});
+        ScrollReveal().reveal('.CU-form', {delay: 100, origin: 'bottom'});
+        ScrollReveal().reveal('.cu-right-h1', {delay: 100, origin: 'right'});
+        ScrollReveal().reveal('.cu-right-p', {delay: 100, origin: 'left'});
+        ScrollReveal().reveal('.CU-social-icons', {delay: 100, origin: 'bottom'});
+
+        ScrollReveal().reveal('.as-text-from-right', {delay: 100, origin: 'left'});
+        ScrollReveal().reveal('.as-text-box-p', {delay: 100, origin: 'right'});
+        ScrollReveal().reveal('.as-img_box', {delay: 300, origin: 'bottom'});
+    </script>
+</body>
+</html>

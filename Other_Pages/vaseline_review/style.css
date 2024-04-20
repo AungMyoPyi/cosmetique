@@ -1,0 +1,176 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+ }
+ body{
+     background-color: #f7c8f4;
+     background-size: cover;
+     font-family:Poppins , sans-serif;
+     margin-top: auto;
+    color:rgb(3, 0, 0);
+ }
+ .boxxy{
+       width:700px;
+       display:block;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top:30px;
+ }
+ .container{
+     width: 100%;
+     height:100vh;
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     float:right;
+ }
+ .gallery{
+     display:flex;
+     align-items:center;
+     justify-content: center;
+ }
+ .img-box{
+     width:100px;
+     height:500px;
+     margin:10px;
+     border-radius:30px;
+     position:relative;
+     transition:0.5s;
+ }
+ .img-box{
+     background-image:url("Body-Lotion.png");
+     background-size:cover;
+     background-position:center;
+ 
+ }
+ .img-box:nth-child(2){
+     background-image:url("hair-care.png");
+     background-size: cover;
+     background-position:center;
+ }
+ .img-box:nth-child(3){
+     background-image:url("Petroleum-Jelly.png");
+     background-size: cover;
+     background-position:center;
+ }
+ .img-box:nth-child(4){
+     background-image:url("lip-therapy.png");
+     background-size: cover;
+     background-position:center;
+ }
+ .img-box:nth-child(5){
+     background-image:url("oil.jpg");
+     background-size: cover;
+     background-position:center;
+ }
+ 
+ .img-box:hover{
+     width:600px;
+     cursor:pointer ;
+ }
+ .review h1{
+     padding-left: 30px;
+     padding-top:40px;
+     
+ }
+ .review h1:hover{
+     text-decoration: underline;
+    }
+ .review p{
+     padding-left:30px;
+     padding-top:25px;
+     line-height: 1.6;
+     font-size:19px;
+     text-align: justify;
+ }
+ .logo img{
+     border-radius: 70px;
+     float:right;
+     margin-top: 12px;
+ }
+ .logo img:hover{
+        transform: scale(1.1);
+     }
+     .discover{
+         color:#a50351;
+         font-size: large;
+         font-weight: 450;
+     }
+     .main p{
+         padding:12px;
+         text-align:justify;
+        font-size:19px;
+        line-height: 1.5;
+     }
+     .link h2{
+           margin-left: 18px;
+           padding-bottom: 15px;
+     }
+     .link ul{
+         margin-left: 7%;
+     }
+     .link li{
+         padding:4px;
+     }
+     .link li:hover{
+         list-style:circle inside;
+         color: darkred;
+     }
+     .footer{
+         font-weight: bold;
+         font-size: 22px;
+         text-align: right;
+         padding:35px 5px 40px 0;  
+         margin-right:12px;
+     }
+     .footer a{
+         color:rgba(233, 49, 123, 0.683);
+         text-decoration: underline;
+     }
+     .footer a:hover{
+         color: rgba(123, 11, 97, 0.893);
+         text-decoration: underline;
+     }
+     .accordion{
+         width:715px;
+     }
+     .accordion .contentBx{
+         position: relative;
+         margin: 10px 20px;
+     } 
+     .accordion .contentBx .label{
+         position: relative;
+         padding:10px;
+         background-color:rgba(59, 0, 34, 0.708);
+         color:#fff;
+         cursor: pointer;
+         border-radius: 10px;
+         font-size:23px;
+     }
+     .accordion .contentBx .label::before{
+         content: '+';
+         position:absolute;
+         top:50%;
+         right:20px;
+         transform: translateY(-50%);
+         font-size:1.5em;
+     }
+     .accordion .contentBx .content{
+         position: relative;
+         background-color: hsla(332, 78%, 69%, 0.527);
+         height:0;
+         font-size: large;
+         transition: 0.5s;
+         overflow:hidden;
+         overflow-y:auto;
+         line-height: 1.4;
+     }
+     .accordion .contentBx.active .content{
+       height:95px;
+       padding: 10px; 
+       border-radius: 10px;
+     }
+     .accordion .contentBx.active .label::before{
+       content: '-';
+     }

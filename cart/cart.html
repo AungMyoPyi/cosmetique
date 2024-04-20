@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="cart.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <link rel="icon" type="image/favicon" href="/images/Favicon.png">
+    <title>Shop Now | Cart</title>
+    
+</head>
+<body>
+    <header class="header">
+        <div class="nav">
+            <nav>
+                <span class="logo">
+                    <a href="#Home" id="logo-a">
+                        <img src="/images/Cosmetique_Logo.png" alt="Cosmetique Logo">
+                    </a>
+                </span>
+
+                <div class="main-menu">
+                    <ul>
+                        <li><a href="/index.html" class="tabBtn enable"><i class="fa-solid fa-house" id="home"></i>Home</a></li>
+                        <li><a href="#Products" class="tabBtn">Products<i class="fa-solid fa-caret-down" id="down"></i></a>
+                            <div class="subMenu1">
+                                <ul>
+                                    <li><a href="/Other_Pages/loreal/L'Oreal.html">L'Oréal Paris</a></li>
+                                    <li><a href="/Other_Pages/romand&rare_beauty/RareBeauty.html">Rare Beauty</a></li>
+                                    <li><a href="/Other_Pages/vaseline/vaseline.html">Vaseline</a></li>
+                                    <li><a href="/Other_Pages/romand&rare_beauty/Romand.html">Romand</a></li>
+                                    <li><a href="/Other_Pages/flower_knows/Flowers.html">Flower Knows</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="/index.html" class="tabBtn">Contact Us</a></li>
+                        <li><a href="/index.html" class="tabBtn">About Us</a></li>
+                    </ul>
+
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-shopping" onclick="toggleCart()"></i>
+                        <p id="count">0</p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="cart-body">
+        <div class="container">
+            <div id="root"></div>
+                <div class="sidebar" id="sideBar">
+                    <i class="fa-solid fa-caret-up" id="up"></i>
+                    <div class="head"><p>My Cart</p></div>
+                    <div id="cartItem">Your cart is empty</div>
+                    <div class="foot">
+                        <h3>Total</h3>
+                        <h2 id="total">0mmK</h2>
+                    </div>
+                </div>    
+        </div>
+    </div>
+    <script src="cart.js"></script>
+
+    <script type="text/javascript">
+        function toggleCart() {
+            let x = document.getElementById("sideBar");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
